@@ -1,0 +1,28 @@
+
+int main(){
+  int a=20;
+  a=a+2;             //when I write this statement how the system knows the value of the a, the answer is that control goes to the location/address of a gets the value.
+  
+  
+>>>>>>>ADDRESS OF OPERATOR>>>>>>
+How do you get the address of a variable?
+using address of(&) operator
+cout<<&a<<endl;     //this will print the address of a.
+
+
+
+>>>>>>>>>>POINTERS>>>>>>>>>>>>>>>>>>
+Now Pointers are the variables that can store the address of the variables.
+
+for eg:----------
+int a=10;            //integer variable
+int *p;              //pointer is a pointer that stores the address of integer variables
+p=&a;
+cout<<&a<<endl;      //0x9397494
+cout<<p<<endl;       //0x9397494
+         
+         
+         
+>>>>>>>>>DEREFERENCE OPERATOR>>>>>>>>> 
+operator is ( * )  using this pointers having the address of variables can access the value of that variable.
+cout<<*p<<endl;     //output=10   because (pointer)p is storing the address of variable a. Using both a and *p we can access the value.
